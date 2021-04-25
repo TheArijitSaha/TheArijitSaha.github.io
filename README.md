@@ -1,2 +1,3 @@
-# TheArijitSaha.github.io
-My Portfolio
+# Arijit Saha
+
+This is my portfolio repository.
