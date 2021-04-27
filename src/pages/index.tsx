@@ -1,21 +1,57 @@
 import React from "react";
 
 import Layout from "../components/Layout";
+import {
+  faLinkedinIn,
+  faTwitter,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+
 import ME_IMG from "../../static/img/Arijit Saha.jpg";
+import ProfileLinkIcon from "../components/ProfileLinkIcon";
 import "./index.css";
 
 const IndexPage = () => {
   return (
     <Layout>
       <div className="w-4/5 mx-auto grid grid-cols-1 min-h-full auto-rows-max sm:grid-cols-4 sm:px-8 sm:py-12 sm:gap-x-8 md:py-16">
-        <div className="z-10 row-span-full col-end-4 col-span-3 px-4 pt-40 pb-3 bg-gradient-to-t from-black sm:bg-none">
-          {/*<p className="text-sm font-medium text-white sm:mb-1 sm:text-gray-500">
+        <div className="flex flex-col z-10 row-span-full col-end-4 col-span-3 px-4 pt-40 pb-3 justify-end sm:justify-start bg-gradient-to-t from-black sm:bg-none">
+          {
+            /*<p className="text-sm font-medium text-white sm:mb-1 sm:text-gray-500">
             Entire house
-          </p>*/}
-          <h2 className="text-xl font-semibold text-white sm:text-2xl sm:leading-10 md:text-5xl">
+          </p>*/
+            //         <a
+            //           href=""
+            //           className="linkIcon fa fa-github"
+            //           target="_blank"
+            //         ></a>
+            //         <!-- <a
+            //           href="https://www.facebook.com/ArijitRox"
+            //           className="linkIcon fa fa-facebook"
+            //           target="_blank"
+            //         ></a> -->
+          }
+          <h2 className="text-xl text-center sm:text-left font-semibold text-white sm:text-2xl sm:leading-10 md:text-5xl">
             I am a CS undergrad who loves to solve problems and learn new
             technologies
           </h2>
+          <div className="flex flex-row py-3 justify-center sm:justify-start">
+            <ProfileLinkIcon
+              icon={faLinkedinIn}
+              link="https://www.linkedin.com/in/thearijitsaha/"
+              title="Linked In Profile"
+            />
+            <ProfileLinkIcon
+              icon={faGithub}
+              link="https://github.com/TheArijitSaha"
+              title="Github Profile"
+            />
+            <ProfileLinkIcon
+              icon={faTwitter}
+              link="https://twitter.com/thearijitsaha"
+              title="Twitter Profile"
+            />
+          </div>
         </div>
         <div className="row-span-full col-start-1 flex sm:col-span-2 sm:col-end-5">
           <div className="w-full grid grid-cols-1 gap-2">
@@ -30,28 +66,6 @@ const IndexPage = () => {
 };
 
 //     <div className="introDiv">
-//       <div className="mediaLinks">
-//         <a
-//           href="https://www.linkedin.com/in/thearijitsaha/"
-//           className="linkIcon fa fa-linkedin"
-//           target="_blank"
-//         ></a>
-//         <a
-//           href="https://twitter.com/thearijitsaha"
-//           className="linkIcon fa fa-twitter"
-//           target="_blank"
-//         ></a>
-//         <a
-//           href="https://github.com/TheArijitSaha"
-//           className="linkIcon fa fa-github"
-//           target="_blank"
-//         ></a>
-//         <!-- <a
-//           href="https://www.facebook.com/ArijitRox"
-//           className="linkIcon fa fa-facebook"
-//           target="_blank"
-//         ></a> -->
-//       </div>
 //       <div className="introText">
 //         <p className="primary">
 //           I am a CS undergrad who loves to solve problems and learn new
