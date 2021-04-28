@@ -5,7 +5,7 @@ import Header, { PageName } from "./Header";
 
 type LayoutProps = {
   headerTitle?: string;
-  children: ReactNode[] | ReactNode;
+  children?: ReactNode[] | ReactNode;
   activePage: PageName;
 };
 

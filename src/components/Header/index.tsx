@@ -39,7 +39,7 @@ const Header: FC<HeaderProps> = ({ activePage }) => {
               navbarOpen ? " flex" : " hidden"
             }`}
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="w-full lg:w-auto flex flex-col lg:flex-row list-none lg:ml-auto">
               <NavLink to="/" name="Home" active={activePage === "Home"} />
               <NavLink
                 to="/Projects"
