@@ -2,18 +2,16 @@ import React from "react";
 
 import Layout from "../components/Layout";
 import Project, { ProjectProps } from "../components/Project";
-// import {
-//   faLinkedinIn,
-//   faTwitter,
-//   faGithub,
-// } from "@fortawesome/free-brands-svg-icons";
-
 import "./body-bg.css";
+import mymdbImg from "../../static/img/projects/MyMDbImg.png";
+import graphTheoreticTextAnalysisImg from "../../static/img/projects/graphTextImg.png";
+import iiestNexusImg from "../../static/img/projects/IIESTNexusImg.png";
+import crioStudentDeveloperImg from "../../static/img/projects/crioCertImg.png";
 
 const projects: ProjectProps[] = [
   {
     title: "Student Backend Developer",
-    bgImg: "crio-student-developer",
+    bgImg: crioStudentDeveloperImg,
     desc:
       "Developed three independent projects involving linux, web development and data structures and algorithms. Check out the portfolio for specifics.",
     refs: [
@@ -25,7 +23,7 @@ const projects: ProjectProps[] = [
   },
   {
     title: "MyMDb",
-    bgImg: "mymdb",
+    bgImg: mymdbImg,
     desc:
       "A web app to keep track of what movies, series you have watched or wish to watch.",
     refs: [
@@ -37,7 +35,7 @@ const projects: ProjectProps[] = [
   },
   {
     title: "Graph Theoretic Text Analysis",
-    bgImg: "graph-theoretic-text-analysis",
+    bgImg: graphTheoreticTextAnalysisImg,
     desc:
       "Seeking out representative keywords from text by constructing co-occurence graphs.",
     refs: [
@@ -49,7 +47,7 @@ const projects: ProjectProps[] = [
   },
   {
     title: "Skill-based social network",
-    bgImg: "crio-student-developer",
+    bgImg: iiestNexusImg,
     desc:
       "A social networking web app with chat, post and search facility. Users can find people based on skills. Followers can view posts, like and comment.",
     refs: [
@@ -64,7 +62,7 @@ const projects: ProjectProps[] = [
 
 const ProjectsPage = () => {
   return (
-    <Layout activePage="Projects">
+    <Layout activePage="Projects" headerTitle="Projects">
       <div className="w-10/12 md:w-4/5 mx-auto">
         <h1 className="mb-4 text-2xl text-purple-200">Projects</h1>
         <div className="pb-2">

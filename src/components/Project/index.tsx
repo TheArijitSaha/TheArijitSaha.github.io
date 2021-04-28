@@ -7,18 +7,21 @@ type ProjectRef = {
 
 export type ProjectProps = {
   title: string;
-  bgImg:
-    | "crio-student-developer"
-    | "mymdb"
-    | "graph-theoretic-text-analysis"
-    | "iiest-nexus";
+  bgImg: string;
   desc?: string;
   refs: ProjectRef[];
 };
 
 const Project: FC<ProjectProps> = ({ title, desc, refs = [], bgImg }) => {
   return (
-    <div className={`my-4 rounded bg-center bg-cover bg-${bgImg}`}>
+    <div
+      className={`my-1 rounded inline-block overflow-hidden relative w-full`}
+    >
+      <img
+        src={bgImg}
+        alt=""
+        className="-z-10 pointer-events-none absolute object-cover object-center min-h-full min-w-full rounded"
+      />
       <div className="rounded flex flex-col p-3 bg-black bg-opacity-70">
         <h3 className="font-medium text-indigo-100 text-lg text-center">
           {title}
