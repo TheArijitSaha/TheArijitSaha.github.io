@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         teko: ["teko", "sans-serif"],
+        roboto: ["roboto-slab", "serif"],
       },
     },
     backgroundColor: (theme) => ({

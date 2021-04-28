@@ -4,8 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+import NavLink from "./NavLink";
+
+export type PageName = "Home" | "Projects";
+
 type HeaderProps = {
-  activePage: "Home" | "Projects";
+  activePage: PageName;
 };
 
 const Header: FC<HeaderProps> = ({ activePage }) => {
@@ -36,18 +40,12 @@ const Header: FC<HeaderProps> = ({ activePage }) => {
             }`}
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <Link
-                  to="/"
-                  className={
-                    `px-3 py-2 flex items-center text-base uppercase` +
-                    ` font-bold leading-snug text-white hover:opacity-75` +
-                    ` ${activePage === "Home" ? "text-gray-400" : ""}`
-                  }
-                >
-                  Home
-                </Link>
-              </li>
+              <NavLink to="/" name="Home" active={activePage === "Home"} />
+              <NavLink
+                to="/Projects"
+                name="Projects"
+                active={activePage === "Projects"}
+              />
             </ul>
           </div>
         </div>

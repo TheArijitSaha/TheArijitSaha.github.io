@@ -9,33 +9,18 @@ import {
 
 import ME_IMG from "../../static/img/Arijit Saha.jpg";
 import ProfileLinkIcon from "../components/ProfileLinkIcon";
-import "./index.css";
+import "./body-bg.css";
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <div className="w-4/5 mx-auto grid grid-cols-1 min-h-full auto-rows-max sm:grid-cols-4 sm:px-8 sm:py-12 sm:gap-x-8 md:py-16">
+    <Layout activePage="Home">
+      <div className="w-4/5 mx-auto grid grid-cols-1 min-h-full auto-rows-max sm:grid-cols-4 sm:px-8 sm:py-12 sm:gap-x-8 md:py-4">
         <div className="flex flex-col z-10 row-span-full col-end-4 col-span-3 px-4 pt-40 pb-3 justify-end sm:justify-start bg-gradient-to-t from-black sm:bg-none">
-          {
-            /*<p className="text-sm font-medium text-white sm:mb-1 sm:text-gray-500">
-            Entire house
-          </p>*/
-            //         <a
-            //           href=""
-            //           className="linkIcon fa fa-github"
-            //           target="_blank"
-            //         ></a>
-            //         <!-- <a
-            //           href="https://www.facebook.com/ArijitRox"
-            //           className="linkIcon fa fa-facebook"
-            //           target="_blank"
-            //         ></a> -->
-          }
           <h2 className="text-xl text-center sm:text-left font-semibold text-white sm:text-2xl sm:leading-10 md:text-5xl">
             I am a CS undergrad who loves to solve problems and learn new
             technologies
           </h2>
-          <div className="flex flex-row py-3 justify-center sm:justify-start">
+          <div className="flex flex-row py-3 md:py-8 justify-center sm:justify-start">
             <ProfileLinkIcon
               icon={faLinkedinIn}
               link="https://www.linkedin.com/in/thearijitsaha/"
@@ -65,27 +50,6 @@ const IndexPage = () => {
   );
 };
 
-//     <div className="introDiv">
-//       <div className="introText">
-//         <p className="primary">
-//           I am a CS undergrad who loves to solve problems and learn new
-//           technologies
-//         </p>
-//         <hr className="line" />
-//         <p className="secondary">
-//           I am a final year CSE student at
-//           <a
-//             href="https://www.iiests.ac.in/"
-//             style="text-decoration: none; color: #555;"
-//             target="_blank"
-//             >IIEST, Shibpur</a
-//           >
-//           and an avid competitive programmer.
-//         </p>
-//       </div>
-//       <img src="static/images/me.jpg" />
-//     </div>
-//
 //     <!-- Internship information -->
 //     <!-- <div className="infoDiv">
 //       <div className="infoHeader CPHeader">

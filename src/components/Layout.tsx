@@ -1,18 +1,18 @@
 import React, { FC, ReactNode } from "react";
 import { Helmet } from "react-helmet";
 
-import Header from "./Header";
+import Header, { PageName } from "./Header";
 
 type LayoutProps = {
   headerTitle?: string;
   children: ReactNode[] | ReactNode;
+  activePage: PageName;
 };
 
-const Layout: FC<LayoutProps> = ({ children, headerTitle }) => (
+const Layout: FC<LayoutProps> = ({ children, headerTitle, activePage }) => (
   <div>
     <Helmet title={`Arijit Saha | ${headerTitle ?? "Home"}`} />
-    {/* TODO: make activePage a prop here and its type to be global*/}
-    <Header activePage="Home" />
+    <Header activePage={activePage} />
     <main className="">{children}</main>
   </div>
 );
