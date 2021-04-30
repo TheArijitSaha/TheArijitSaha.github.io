@@ -14,7 +14,7 @@ import "./body-bg.css";
 const IndexPage = () => {
   return (
     <Layout activePage="Home">
-      <div className="w-4/5 mx-auto grid grid-cols-1 min-h-full auto-rows-max sm:grid-cols-4 sm:px-8 sm:py-12 sm:gap-x-8 md:py-4">
+      <div className="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 min-h-full auto-rows-max sm:grid-cols-4 sm:px-8 sm:py-12 sm:gap-x-8 md:py-4">
         <div className="flex flex-col z-10 row-span-full col-end-4 col-span-3 px-4 pt-40 pb-3 justify-end sm:justify-start bg-gradient-to-t from-black sm:bg-none">
           <h2 className="text-xl text-center sm:text-left font-semibold text-white sm:text-2xl sm:leading-10 md:text-5xl">
             I am a CS undergrad who loves to solve problems and learn new
