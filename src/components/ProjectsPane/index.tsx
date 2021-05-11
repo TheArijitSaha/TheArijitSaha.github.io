@@ -1,12 +1,10 @@
 import React from "react";
 
-import Layout from "../components/Layout";
-import Project, { ProjectProps } from "../components/Project";
-import "./body-bg.css";
-import mymdbImg from "../../static/img/projects/MyMDbImg.png";
-import graphTheoreticTextAnalysisImg from "../../static/img/projects/graphTextImg.png";
-import iiestNexusImg from "../../static/img/projects/IIESTNexusImg.png";
-import crioStudentDeveloperImg from "../../static/img/projects/crioCertImg.png";
+import Project, { ProjectProps } from "./Project";
+import mymdbImg from "../../../static/img/projects/MyMDbImg.png";
+import graphTheoreticTextAnalysisImg from "../../../static/img/projects/graphTextImg.png";
+import iiestNexusImg from "../../../static/img/projects/IIESTNexusImg.png";
+import crioStudentDeveloperImg from "../../../static/img/projects/crioCertImg.png";
 
 const projects: ProjectProps[] = [
   {
@@ -60,19 +58,17 @@ const projects: ProjectProps[] = [
   },
 ];
 
-const ProjectsPage = () => {
+const ProjectsPane = () => {
   return (
-    <Layout activePage="Projects" headerTitle="Projects">
-      <div className="w-11/12 md:w-4/5 mx-auto">
-        <h1 className="mb-4 text-2xl text-purple-200">Projects</h1>
-        <div className="pb-2">
-          {projects.map((project, index) => (
-            <Project key={index} {...project} />
-          ))}
-        </div>
+    <div className="w-11/12 md:w-4/5 mx-auto" id="Projects">
+      <h1 className="mb-4 text-2xl text-purple-200">Projects</h1>
+      <div className="pb-2">
+        {projects.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
       </div>
-    </Layout>
+    </div>
   );
 };
 
-export default ProjectsPage;
+export default ProjectsPane;

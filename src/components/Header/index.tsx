@@ -6,13 +6,13 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import NavLink from "./NavLink";
 
-export type PageName = "Home" | "Projects";
+export type PageName = "Projects" | "Work";
 
 type HeaderProps = {
-  activePage: PageName;
+  activePage?: PageName;
 };
 
-const Header: FC<HeaderProps> = ({ activePage }) => {
+const Header: FC<HeaderProps> = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
@@ -40,12 +40,8 @@ const Header: FC<HeaderProps> = ({ activePage }) => {
             }`}
           >
             <ul className="w-full lg:w-auto flex flex-col lg:flex-row list-none lg:ml-auto">
-              <NavLink to="/" name="Home" active={activePage === "Home"} />
-              <NavLink
-                to="/Projects"
-                name="Projects"
-                active={activePage === "Projects"}
-              />
+              <NavLink to="/#Work" name="Work" />
+              <NavLink to="/#Projects" name="Projects" />
             </ul>
           </div>
         </div>

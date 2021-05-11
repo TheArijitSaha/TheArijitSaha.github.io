@@ -10,10 +10,12 @@ import {
 import ME_IMG from "../../static/img/Arijit Saha.jpg";
 import ProfileLinkIcon from "../components/ProfileLinkIcon";
 import "./body-bg.css";
+import ProjectsPane from "../components/ProjectsPane";
+import WorkPane from "../components/WorkPane";
 
 const IndexPage = () => {
   return (
-    <Layout activePage="Home">
+    <Layout>
       <div className="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 min-h-full auto-rows-max sm:grid-cols-4 sm:px-8 sm:py-12 sm:gap-x-8 md:py-4">
         <div className="flex flex-col z-10 row-span-full col-end-4 col-span-3 px-4 pt-40 pb-3 justify-end sm:justify-start bg-gradient-to-t from-black sm:bg-none">
           <h2 className="text-xl text-center sm:text-left font-semibold text-white sm:text-2xl sm:leading-10 md:text-5xl">
@@ -46,54 +48,13 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
+
+      <WorkPane />
+      <ProjectsPane />
     </Layout>
   );
 };
 
-//     <!-- Internship information -->
-//     <!-- <div className="infoDiv">
-//       <div className="infoHeader CPHeader">
-//         <p className="infoIntro CPIntro">Internships</p>
-//       </div>
-//
-//       <div className="projectPane MSLogoImg">
-//         <div className="header">
-//           <span className="date">Summer 2020</span>
-//           <br />
-//           <span className="name">Microsoft</span>
-//           <br />
-//           <span className="link">
-//             Software Engineer Intern
-//           </span>
-//         </div>
-//         <div className="content">
-//           <p>
-//             As part of the Edge PDF team, enhanced user experience by adding an
-//             annotation feature.
-//           </p>
-//         </div>
-//       </div>
-//
-//       <div className="projectPane ISILogoImg">
-//         <div className="header">
-//           <span className="date">Summer 2019</span>
-//           <br />
-//           <span className="name">ISI Kolkata</span>
-//           <br />
-//           <span className="link">
-//             Research Intern
-//           </span>
-//         </div>
-//         <div className="content">
-//           <p>
-//             Worked on Quantum Cryptographic simulations using IBM's Quantum
-//             Computer and QUISKIT. Calculated Mutually Unbiased Bases in multiple
-//             dimensions.
-//           </p>
-//         </div>
-//       </div>
-//     </div> -->
-//
 //     <!-- Competitive Programming information -->
 //     <!-- <div className="infoDiv CPDiv">
 //       <div className="infoHeader CPHeader">

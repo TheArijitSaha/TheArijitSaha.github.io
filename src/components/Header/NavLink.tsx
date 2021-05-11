@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 
 type NavLinkProps = {
   to: string;
-  active: Boolean;
   name: string;
 };
 
@@ -16,7 +15,7 @@ const NavLink: FC<NavLinkProps> = ({ name, to, active }) => {
         className={
           `px-3 py-2 flex items-center text-base uppercase` +
           ` font-bold leading-snug text-white hover:opacity-75` +
-          ` ${active ? "text-purple-400" : "text-gray-300"}`
+          `text-gray-300`
         }
       >
         {name}

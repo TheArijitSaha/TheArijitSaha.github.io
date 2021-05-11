@@ -6,7 +6,7 @@ import Header, { PageName } from "./Header";
 type LayoutProps = {
   headerTitle?: string;
   children?: ReactNode[] | ReactNode;
-  activePage: PageName;
+  activePage?: PageName;
 };
 
 const Layout: FC<LayoutProps> = ({ children, headerTitle, activePage }) => (
