@@ -1,8 +1,8 @@
 import { ProjectProps } from "../components/ProjectsPane/Project";
-import mymdbImg from "../../../static/img/projects/MyMDbImg.png";
-import graphTheoreticTextAnalysisImg from "../../../static/img/projects/graphTextImg.png";
-import iiestNexusImg from "../../../static/img/projects/IIESTNexusImg.png";
-import crioStudentDeveloperImg from "../../../static/img/projects/crioCertImg.png";
+import mymdbImg from "../../static/img/projects/MyMDbImg.png";
+import graphTheoreticTextAnalysisImg from "../../static/img/projects/graphTextImg.png";
+import iiestNexusImg from "../../static/img/projects/IIESTNexusImg.png";
+import crioStudentDeveloperImg from "../../static/img/projects/crioCertImg.png";
 
 const projects: ProjectProps[] = [
   {

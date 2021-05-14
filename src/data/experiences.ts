@@ -1,7 +1,7 @@
 import { ExperienceProps } from "../components/WorkPane/Experience";
-import isiLogoImg from "../../../static/img/experiences/ISILogoImg.png";
-import googleLogoImg from "../../../static/img/experiences/GoogleLogoImg.jpg";
-import msLogoImg from "../../../static/img/experiences/MSLogoImg.jpg";
+import isiLogoImg from "../../static/img/experiences/ISILogoImg.png";
+import googleLogoImg from "../../static/img/experiences/GoogleLogoImg.jpg";
+import msLogoImg from "../../static/img/experiences/MSLogoImg.jpg";
 
 const experiences: ExperienceProps[] = [
   {
